@@ -1,0 +1,10 @@
+{"from": "planner_agent", "to": "executor_agent", "payload": {"task": "search web", "query": "AI tools 2026"}, "status": "ok", "id": 1, "timestamp": "2026-05-27T18:31:00.175128"}
+{"from": "executor_agent", "to": "http://localhost:8000/api/search", "payload": {"q": "AI tools"}, "status": "ok", "id": 2, "timestamp": "2026-05-27T18:31:00.175128"}
+{"from": "executor_agent", "to": "http://localhost:9999/api/broken", "payload": {"q": "test"}, "status": "error", "id": 3, "timestamp": "2026-05-27T18:31:00.175128"}
+{"from": "memory_agent", "to": "executor_agent", "payload": {"action": "save", "key": "last_search"}, "status": "ok", "id": 4, "timestamp": "2026-05-27T18:31:00.176128"}
+{"from": "validator", "to": "schema_check", "payload": {"name": "web_search", "args": {"q": "test"}}, "status": "valid", "id": 5, "timestamp": "2026-05-27T18:31:00.176128"}
+{"from": "planner", "to": "http://slow-api.com/process", "status": "ok", "elapsed_ms": 2400, "payload": {}, "id": 6, "timestamp": "2026-05-27T18:31:00.177130"}
+{"from": "router", "to": "http://broken-api.com/call", "status": "error", "elapsed_ms": 150, "response": {"error": "Connection refused"}, "payload": {}, "id": 7, "timestamp": "2026-05-27T18:31:00.177130"}
+{"from": "validator", "to": "schema_check", "payload": {"name": "web_search", "args": {"query": "AI tools"}}, "status": "valid", "errors": [], "id": 8, "timestamp": "2026-05-27T18:31:00.178129"}
+{"from": "validator", "to": "schema_check", "payload": {"args": {"query": "AI tools"}}, "status": "invalid", "errors": ["'name' is required but missing."], "id": 9, "timestamp": "2026-05-27T18:31:00.178129"}
+{"from": "jarvis", "to": "1", "payload": 1, "status": "1", "id": 10, "timestamp": "2026-05-27T18:46:21.789000"}

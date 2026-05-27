@@ -1,0 +1,3 @@
+# Agent Postman — no external dependencies required.
+# All modules use Python stdlib only (urllib, threading, json, etc.)
+# Optional: install 'requests' for better HTTP support (not required).
