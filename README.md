@@ -146,10 +146,9 @@ agent_postman/
 
 ## 💰 Pricing
 
-| Plan | Price | Features |
-|------|-------|---------|
-| **Free** | $0 | Core CLI, inspect, test, validate |
-| **Pro** | $4.99 one-time | Workflow save/replay, simulator, live trace, Python API |
+**100% Free and Open Source.** 
+
+This was built by a developer frustrated with multi-agent debugging. All features (including live tracing, simulation, and workflow replay) are completely unlocked. If it saves you hours of debugging, just drop a star on the repo!
 
 ---
 
