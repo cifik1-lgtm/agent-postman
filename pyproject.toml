@@ -27,9 +27,9 @@ dependencies = [
 agent-postman = "agent_postman.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/yourname/agent-postman"
-Repository = "https://github.com/yourname/agent-postman"
-Issues = "https://github.com/yourname/agent-postman/issues"
+Homepage = "https://github.com/cifik1-lgtm/agent-postman"
+Repository = "https://github.com/cifik1-lgtm/agent-postman"
+Issues = "https://github.com/cifik1-lgtm/agent-postman/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
